@@ -41,7 +41,7 @@ docker run -p 9000:9000 geekshubs/geekshubs-php-fpm72
 ```
 
 ## :arrow_forward: How to use.
-In your proxy to use thi container add the proxy pass to container.
+In your web server to use this container add the proxy pass for example:.
 ### Apache.
 ```conf
 ProxyPassMatch ^/(.*\.php(/.*)?)$ fcgi://overgenes_php7:9000/var/www/html/public/$1
