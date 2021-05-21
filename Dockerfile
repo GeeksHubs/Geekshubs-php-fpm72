@@ -1,7 +1,7 @@
 FROM php:7.2-fpm as php-fpm-72
 ARG TIMEZONE
 
-MAINTAINER Geekshubs
+LABEL maintainer="Geekshubs xavi@geekshubs.com"
 
 RUN apt-get update && apt-get install -y \
     git \
